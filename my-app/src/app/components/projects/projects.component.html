@@ -1,0 +1,232 @@
+<div id="projects" class="wrapperProjects">
+  <h1 style="text-align: center; padding-top: 0.5em; font-family: 'Montserrat', sans-serif;">Proyectos</h1>
+  <div class="projects">
+    <div *ngFor="let proyecto of proyectos">
+      <div class="containerImagen">
+        <img class="imagenProjects" src="{{proyecto.imgP}}" style="overflow: hidden;">
+        <a href="{{proyecto.linkP}}" target="_blank">
+          <div class="textoImagen">
+            <h2>{{proyecto.tituloP}}</h2>
+            <p>{{proyecto.descripcionP}}</p>
+            <p class="fecha">{{proyecto.anioP}}</p>
+          </div>
+        </a>
+      </div>
+
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative; padding-bottom: 1em;padding-top: 0.25em;" *ngIf="isLogged">
+        <button class="btn btn-light" style=" margin-right: 5%;" title="Haz click para editar"
+        routerLink="/editproyecto/{{proyecto.id}}">
+          <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;"
+        (click)="delete(proyecto.id)">
+          <i class="fa-solid fa-trash-can"></i></button>
+      </div>
+    </div>
+
+
+    <div class="agregar" style="margin-left: auto; margin-right: auto;
+        width: 240px;    height: 240px; text-align: center;
+        vertical-align: middle; display: flex;" *ngIf="isLogged">
+            <button type="button" class="btn btn-light" 
+            routerLink="/nuevoproyecto">
+            <i class="fa-solid fa-plus fa-2xl" ></i>
+            </button>
+        </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<!--
+
+<div id="projects" class="wrapperProjects">
+  <h1 style="text-align: center; padding-top: 0.5em;">Proyectos</h1>
+  <div class="projects">
+
+    <div style=" font-family:unset; text-align: center; ;
+      position: relative;" *ngIf="isLogged" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+    <div class="containerImagen">
+      <img class="imagenProjects" src="assets/ArduinoArm.gif" style="overflow: hidden;" >
+      <a href="https://www.instagram.com" target="_blank">  
+        <div class="textoImagen">
+          <h2>Brazo robótico bluetooh.</h2>
+          <p>En este proyecto, se combinaron conocimientos sobre Arduino e impresión 3d
+            para crear un brazo robótico manejado por Bluetooth como trabajo final del curso
+            Introducción a Arduino.
+          </p>
+          <p class="fecha">2020</p>
+
+        </div>
+
+      </a>
+
+    </div>
+
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/stsApp.gif" style="overflow: hidden!important; ">
+
+      <a href="https://github.com/agjoaquin/SitToStandApp/" target="_blank">
+        <div class="textoImagen">
+          <h2>Sit To Stand App.</h2>
+          <p>Cálculo de potencia muscular basado en imágenes de video
+            de un test Sit To Stand utilizando python como proyecto de adscripción
+            en la cátedra de Robótica de la FIUNER.</p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/x-ray.png">
+      <a href="https://www.instagram.com" target="_blank">
+        <div class="textoImagen">
+          <h2>S.V.I.M.</h2>
+          <p>Sistema de Visualización de Imágenes Médicas, fue realizado
+            como proyecto final de la materia
+            Programación Avanzada de la carrera de Bioingeniería
+            en el lenguaje C++ utilizando QtCreator.
+          </p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/robotPhoto.png">
+      <a href="https://www.instagram.com" target="_blank">
+        <div class="textoImagen">
+          <h2>Taller Robótica aplicada.</h2>
+          <p>En este proyecto se ha realizado algo genial con un robot
+            ABB IRB 120 y RobotStudio pero aún no sabemos qué.</p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/Mupad.png">
+      <a href="https://www.instagram.com" target="_blank">
+        <div class="textoImagen">
+          <h2>Matlab?</h2>
+          <p>Trabajo realizado para la cátedra de Funciones de Varaible
+            Compleja de la carrera de Bioingeniería.</p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/Cura.png">
+      <a href="https://www.instagram.com" target="_blank">
+        <div class="textoImagen">
+          <h2>Repositorio de Impresión 3D.</h2>
+          <p>Aquí se recopilan los trabajos personalizados
+            de diseño e impresión 3d.</p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/Tetris.png">
+      <a href="https://www.instagram.com" target="_blank">
+        <div class="textoImagen">
+          <h2>TXTRIS.</h2>
+          <p>Realizado como proyecto final de la materia
+            Programación Avanzada de la carrera de Bioingeniería
+            en el lenguaje C++ utilizando QtCreator
+            es una réplica al conocido juego retro de consola.</p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/MediaPipe.png">
+      <a href="https://www.instagram.com" target="_blank">
+        <div class="textoImagen">
+          <h2>TIF Fisiología.</h2>
+          <p>Trabajo realizado como Trabajo Integrador Final para la materia
+            Fisiología y Biofísica de la carrera de Bioingeniería.</p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+    <div class="containerImagen">
+      <div style=" font-family:unset; text-align: center; ;
+      position: relative;" >
+        <button class="btn btn-light" style=" margin-right: 5%;">
+            <i class="fa-solid fa-pen"></i></button>
+        <button class="btn btn-danger" style=" margin-left: 5%;">
+            <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      <img class="imagenProjects" src="assets/stsApp.gif">
+      <a href="https://github.com/agjoaquin/SitToStandApp/" target="_blank">
+        <div class="textoImagen">
+          <h2>Sit To Stand App.</h2>
+          <p>Cálculo de potencia muscular basado en imágenes de video
+            de un test Sit To Stand utilizando python como proyecto de adscripción
+            en la cátedra de Robótica de la FIUNER.</p>
+          <p class="fecha">2020</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+-->

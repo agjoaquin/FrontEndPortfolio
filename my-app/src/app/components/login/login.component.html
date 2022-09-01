@@ -1,0 +1,65 @@
+<div class="topBar">
+  <h5 class="volver"><a href="portfolio">Volver</a></h5>
+  <h1 style="margin-top: -6vh;">Iniciar sesión</h1>
+
+</div>
+
+<div
+  style=" height: 85vh; background: 
+  linear-gradient(135deg, #00699c 0%, rgb(0,105,156,0.80) 50%, #00699c 100%); padding: 0.5em">
+  <form #f="ngForm" (ngSubmit)="onLogin()" novalidate class="m-5">
+    <div class="mb-3">
+      <label for="nombreUsuario" class="form-label">
+        <h2 style="color:aliceblue;">Usuario</h2>
+      </label>
+      <input type="nombreUsuario" 
+        class="form-control" id="nombreUsuario" name="nombreUsuario"
+        [(ngModel)]="nombreUsuario" required
+        style="font-size:larger; font-weight: bold;color:#333;">
+        <!--
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p *ngIf="Email?.hasError('required')" class="text-danger" style="font-weight: bold; background-color: #333;font-size: large;margin-top: 10px; width: 100%;
+        padding-left:2%;  padding-top: 0.5%; padding-bottom: 0.5%;">
+          Debe ingresar un email.
+        </p>
+        <p *ngIf="Email?.hasError('email')" class="text-danger" style="font-weight: bold; background-color: #333;font-size: large;margin-top: 10px; width: 100%;
+        padding-left:2%; padding-top: 0.5%; padding-bottom: 0.5%;">
+          El formato de email no es válido.
+        </p>
+      </div>
+        -->
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">
+        <h2 style="color:aliceblue;">Contraseña</h2>
+      </label>
+      <input type="password" id="password" name="password" class="form-control form-control-lg" 
+      [(ngModel)]="password" required
+      style="font-size:larger; font-weight: bold;color:#333;">
+      
+      <p class="text-danger" *ngIf="isLogginFail"
+      style="font-weight: bold; background-color: #333;font-size: large;margin-top: 10px; width: 100%;
+        padding-left:2%; padding-top: 0.5%; padding-bottom: 0.5%;">
+        Usuario o contraseña incorrectas. Por favor intente de nuevo.</p>
+      <!--
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="text-danger" style="font-weight: bold; background-color: #333;font-size: large;margin-top: 10px; width: 100%;
+        padding-left:2%; padding-top: 0.5%; padding-bottom: 0.5%;">
+          Debe ingrear una contraseña.
+        </p>
+        <p *ngIf="Password?.errors" class="text-danger" style="font-weight: bold; background-color: rgb(51,51,51,0.95) ; font-size: large;margin-top: 10px; width: 100%;
+        padding-left:2%;  padding-top: 0.5%;">
+          La contraseña debe tener 8 o más caracteres.
+        </p>
+      </div>
+      -->
+    </div>
+    <button type="submit" class="sendButton">Enviar</button>
+    
+  </form>
+<!--
+  <form #f="ngForm" (ngSubmit)="onSkip()" novalidate class="m-5">
+    <button  type="submit" class="skip">Ingresar como invitado</button>
+    </form>
+    -->
+</div>

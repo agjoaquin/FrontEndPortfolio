@@ -1,0 +1,28 @@
+<div class="topBar">
+    <h5 class="volver"><a href="portfolio">Volver</a></h5>
+    <h1 style="margin-top: -6vh;">Nuevo proyecto</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreSkill">Nombre</label>
+                    <input type="text" class="form-control" id="nombreSkill" name="nombreSkill" [(ngModel)]="nombreSkill" required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeSkill">Porcentaje (Entre 0 y 100)</label>
+                    <input type="text" class="form-control" id="porcentajeSkill" name="porcentajeSkill" [(ngModel)]="porcentajeSkill" required>
+                </div>
+                <div class="form-group">
+                    <label for="linkImagenSkill">Link a la imagen</label>
+                    <input type="text" class="form-control" id="linkImagenSkill" name="linkImagenSkill" [(ngModel)]="linkImagenSkill" required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Agregar habilidad
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+*{
+       color:aliceblue;
+}
+td{
+    font-family: 'Montserrat', sans-serif;
+}
+td{
+    max-width: 30vw;
+    overflow-wrap: break-word;
+
+}
+
+tr{
+    border-color: rgb(255, 215, 0,0.8);
+}
+
+.btn-danger{
+    background-color: rgb(0,0,0,0.5);
+}
+.btn-danger:hover{
+    background-color: rgb(255,0,0,0.5);
+}
+
+.btn-light{
+    background-color: rgb(0,0,0,0.5);
+}
+.btn-light:hover{
+
+    background-color: rgb(255,255,255,0.5);
+}

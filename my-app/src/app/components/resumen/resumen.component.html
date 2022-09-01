@@ -1,0 +1,27 @@
+<div id="resume" class="wrapperResume">
+  <h1 style="text-align: center;  font-family: 'Montserrat', sans-serif;   background-color: rgb(0,0,0,0.5);
+  width: auto; margin-right: auto; margin-left:auto; border-radius: 0.5em;
+   color:aliceblue; width: fit-content; padding: 0.1em;">Resumen</h1>
+  <div class="resume">
+    <img class="profilePicture" src="{{persona.img}}">
+    <div class="info-content"
+      style=" padding: 1em ; z-index: 2; background-color: rgba(0, 0, 0, 0.5); border-radius: 1em;">
+      <p style="font-size:25px;">
+        {{persona.resumen}}
+      </p>
+    </div>
+    <div style="text-align: center; padding: 0.5em;" *ngIf="isLogged" routerLink="/edithead/{{persona.id}}">
+      <button class="btn btn-light"  title="Haz click para editar">
+        <i class="fa-solid fa-pen"></i></button
+        >
+        
+        </div>
+  </div>
+
+</div>
+
+
+<!-- Fullstack Web Developer, Estudiante avanzado de Bioingeniería y Adscripto de la cátedra
+        de robótica,
+        me gusta estar en formación continua y he realizado cursos
+        como Arquitecturas de microservicios, Arduino, Impresión 3d, Big Data e Introducción a Robots industriales.-->

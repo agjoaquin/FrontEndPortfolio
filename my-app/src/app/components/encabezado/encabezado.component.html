@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="main" >
+      <div class="info-content" >
+        <h1 style="font-size:27px;">&#60;dev&#62;</h1>
+        <h1 style="font-size:37px;">Soy {{persona.nombre}} {{persona.apellido}}.</h1>
+        <h1 style="font-size:27px;">&#60;/dev&#62;</h1>
+        <p style="font-size:27px; margin-top: 37px;"> &#60;p&#62; ¡Bienvenido a mi portfolio! &#60;/p&#62;
+          </p>
+        <p style="font-size:27px; margin-left: 10%;"><span class="blinkBar" >|</span>
+          <button class="btn btn-dark" *ngIf="isLogged" routerLink="/edithead/{{persona.id}}"
+          style="color:  rgb(0,255,0,1)" title="Haz click para editar">
+            <i class="fa-solid fa-pen"></i></button></p>
+          
+      </div>
+    </div>
+  </div>
+  

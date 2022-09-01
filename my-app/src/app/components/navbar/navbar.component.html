@@ -1,0 +1,25 @@
+<nav class="navbar">
+    <div class="brand">
+      <h2 style="font-weight: bold; padding: 15px; height: 70px;">
+        J<span>M</span>A <a class="emoji" style="text-decoration: none;">
+          <span class="emoji1">😊</span><span class="emoji2">😉</span></a> 
+          <img src="assets/logoArgProg.png" style="height:70px;">
+          <img src="assets/LogosInti.png" style="height:70px;"></h2>
+      
+    </div>
+    <ul class="menu">
+      <li><a href="/portfolio">Inicio</a></li>
+      <li><a href="/portfolio#resume">Resumen</a></li>
+      <li><a href="/portfolio#projects">Proyectos</a></li>
+      <li><a href="/portfolio#grades">Formación</a></li>
+      <li><a href="/portfolio#footer">Contacto</a></li>
+      <li title="Haz click para iniciar sesión" class="key" *ngIf="!isLogged">
+        <button type="button" (click)="login()" >
+          <i class="fas fa-key"></i></button>
+      </li>
+      <li title="Cerrar sesión" class="logout" *ngIf="isLogged">
+        <button type="button" (click)="onLogOut()" >
+          <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+      </li>
+    </ul>
+  </nav>

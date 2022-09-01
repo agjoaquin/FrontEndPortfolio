@@ -1,0 +1,23 @@
+<div class="topBar">
+    <h5 class="volver"><a href="portfolio">Volver</a></h5>
+    <h1 style="margin-top: -6vh;">Editar experiencia</h1>
+</div>
+<div class="container" *ngIf="expLab">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Nombre de la empresa</label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion de la tarea</label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

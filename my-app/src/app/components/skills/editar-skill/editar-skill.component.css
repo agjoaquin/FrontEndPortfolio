@@ -1,0 +1,24 @@
+.topBar{
+    background-color: #333;  color:aliceblue; 
+height: 15vh; text-align: center; padding: 1em;
+}
+.volver{
+    width: fit-content;
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.volver a{
+    text-decoration:none;
+    color: aliceblue;
+}
+.volver:hover{
+    text-shadow: 0px 0px 5px gold;
+    background-color: rgb(0,0,0,0.05);
+    transition: ease-in .5s;
+    color: gold;
+  }
+  .volver:hover a{
+    transition: ease-in .5s;
+    color: gold;
+  }

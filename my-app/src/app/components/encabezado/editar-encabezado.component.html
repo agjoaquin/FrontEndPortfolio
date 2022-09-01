@@ -1,0 +1,31 @@
+<div class="topBar">
+    <h5 class="volver"><a href="portfolio">Volver</a></h5>
+    <h1 style="margin-top: -6vh;">Editar datos personales</h1>
+</div>
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="resumen">Resumen </label>
+                    <input type="text" class="form-control" rows="4" id="resumen" name="resumen" [(ngModel)]="persona.resumen" required>
+                </div>
+                <div class="form-group">
+                    <label for="img">Link a imagen o gif</label>
+                    <input type="url" class="form-control" id="img" name="img" [(ngModel)]="persona.img" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

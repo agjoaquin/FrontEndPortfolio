@@ -1,0 +1,29 @@
+*{
+   
+    background-color: #333;
+    color:aliceblue;
+}
+td{
+    font-family: 'Montserrat', sans-serif;
+}
+td{
+    max-width: 30vw;
+    overflow-wrap: break-word;
+
+}
+
+tr{
+    border-color: rgb(255, 215, 0,0.8);
+}
+.fa-pen{
+    background-color: rgb(0, 0, 0,0) ;
+}
+.btn-light:hover .fa-pen{
+    color:#333;
+}
+.fa-plus{
+    background-color: rgb(0, 0, 0,0) ;
+}
+.fa-trash-can{
+    background-color: rgb(0, 0, 0,0) ;
+}

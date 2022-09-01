@@ -1,0 +1,33 @@
+<div class="row">
+    <h1 style="text-align: center;  font-family: 'Montserrat', sans-serif;">Experiencia</h1>
+
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged"
+        style="width: 90vw; margin-right: auto; margin-left:auto;">
+            <i class="fa-solid fa-plus fa-xl"></i> 
+        </button>
+
+
+
+    <div class="col-lg-11" style="margin-right: auto; margin-left:auto;">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let experiencia of experiencias">
+                    <td>
+                        <h2>{{experiencia.nombreE}}</h2>
+                    </td>
+                    <td ><h5>{{experiencia.descripcionE}}</h5></td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editexp/{{experiencia.id}}"
+                        title="Haz click para editar">
+                            <i class="fa-solid fa-pen"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(experiencia.id)">
+                            <i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

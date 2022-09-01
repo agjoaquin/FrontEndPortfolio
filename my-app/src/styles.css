@@ -1,0 +1,147 @@
+/*Hoja de estilos*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper{
+  width : 100vw;
+  height : 80vh;
+  background: linear-gradient(135deg, #00699c 0%, rgb(0,105,156,0.70) 50%, #00699c 100%);
+  
+}
+.main{
+  margin: auto;
+  margin-top: 80px;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center ;
+  justify-content: space-between ;
+  background-image: url('assets/laptop.png') ;  
+  background-position: center ;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.main .info-content{
+  font-family: 'Share Tech Mono', monospace;
+  margin: auto;
+  margin-top: 11vh;
+  width: 40vw;
+  height: 40vh;
+  color: 	green;
+  background: rgb(0,0,0,0.25);
+}
+
+.main .info-content .blinkBar{
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+@keyframes blink {
+  0%   {color: rgb(0,255,0,0.0);}
+  100% {color: rgb(0,255,0,1);}
+}
+.wrapperResume{
+  font-family: 'Montserrat', sans-serif;
+  height : auto;
+  background-image: url('https://i.imgur.com/7u1N1gr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 1em;
+}
+
+.resume{
+  z-index: 2;
+  padding: 1em;
+  width: 95vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.profilePicture{
+  margin-right: 2em;
+  z-index: 2;
+  height:150px; 
+  border-radius: 50%; 
+  border: 5px solid rgb(15,15,15,0.5);
+}
+
+.profilePicture:hover{
+  transition: ease-in .1s;
+}
+
+.wrapperGrades{
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  width : 100vw;
+  height : auto; 
+  background: rgb(15,15,15);
+}
+
+.grades .info-content h2{
+  font-weight: bold;
+}
+
+.grades{
+  padding: 1em;
+  margin: 0 auto;
+  width: 90vw;
+  height: auto;
+  display: flex;
+  line-height:10px;
+  z-index: 2;
+  color: aliceblue;
+}
+
+.backgroundGrades{
+  width :100vw;
+  height : 115vh;
+  background-image: url('assets/Background2.jpg' ) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+  margin-top: -115vh;
+}

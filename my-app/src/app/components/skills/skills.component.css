@@ -1,0 +1,54 @@
+
+.skillsFrame{
+    padding: 2em;
+    width : 100vw;
+    height : auto;
+    display: grid;
+    grid-template-columns: repeat(5,3fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skillsFrame .logoFrame{
+    padding: 1em;
+    border-radius: 50%;
+    background-color: rgba(51, 51, 51, 0.8);
+    width: 180px;
+    height: 180px; 
+    margin-left: auto; margin-right: auto;
+    display: grid;
+    border: 10px solid rgb(255,215,0,0.8);
+}
+
+.skillsFrame .logoFrame img{
+    height: 90px; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+circle-progress{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn-danger{
+    background-color: rgb(0,0,0,0.5);
+}
+.btn-danger:hover{
+    background-color: rgb(255,0,0,0.5);
+}
+
+.btn-light{
+    color:white;
+    background-color: rgb(0,0,0,0.5);
+}
+.btn-light:hover{
+    background-color: rgb(255,255,255,0.5);
+}
+
+.agregar .btn-light{
+    margin-right: auto; margin-left:auto; 
+            padding: 1em; margin-top: auto; margin-bottom:auto;
+}
