@@ -1,0 +1,18 @@
+{
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+      "my-app": {
+        "projectType": "application",
+        "schematics": {},
+        "root": "",
+        "sourceRoot": "src",
+        "prefix": "app",
+        "architect": {
+      }
+    }
+    },
+    "cli": {
+      "analytics": "3afb10e0-c22e-4901-8a0b-3eb3264d3f1b"
+    }
+  }
