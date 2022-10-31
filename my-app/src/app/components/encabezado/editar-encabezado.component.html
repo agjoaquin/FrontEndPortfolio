@@ -7,7 +7,7 @@
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombre">Nombre </label>
+                    <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
                 </div>
                 <div class="form-group">
@@ -19,7 +19,7 @@
                     <input type="text" class="form-control" rows="4" id="resumen" name="resumen" [(ngModel)]="persona.resumen" required>
                 </div>
                 <div class="form-group">
-                    <label for="img">Link a imagen o gif</label>
+                    <label for="img">Link a imagen o .gif</label>
                     <input type="url" class="form-control" id="img" name="img" [(ngModel)]="persona.img" required>
                 </div>
                 <button class="btn btn-primary">

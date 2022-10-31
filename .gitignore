@@ -1,0 +1,5 @@
+
+my-app/.angular/cache
+my-app/.firebase/
+my-app/.vscode/
+my-app/node_modules/

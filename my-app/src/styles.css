@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center ;
   justify-content: space-between ;
-  background-image: url('assets/laptop.png') ;  
+  background-image: url('https://i.imgur.com/ErMfQlo.png') ;  
   background-position: center ;
   background-size: 70%;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@ body {
 .backgroundGrades{
   width :100vw;
   height : 115vh;
-  background-image: url('assets/Background2.jpg' ) ;
+  background-image: url(https://i.imgur.com/TC9FunT.jpg) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
